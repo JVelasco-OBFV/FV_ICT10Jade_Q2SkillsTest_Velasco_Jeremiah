@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--NO AI WAS USED FOR GENERATING CODE NOR GENERATING LAYOUT-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <!-- Bootstrap -->
@@ -10,19 +11,30 @@
     <style>
         #periodic_table{
             padding: 30px;
+            width: 700px;
+        }
+        h1{
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container" id="periodic_table">
+        <form action="#">
         <h1>Periodic Table of Elements</h1>
         <br>
         <label for="element">Element Name</label>
         <br>
         <input type="text" name="element" placeholder="Enter an element..." id="atom" class="form-control">
         <br>
-        <button class="btn btn-info" py-click="check_element">Check Details</button>
+        <button class="btn btn-info" type="button" py-click="check_element">Check Details</button>
         <br>
+        </form>
+        <br>
+        <h2><b>Result:</b></h2>
+        <div id="output1">
+            Your results will display here
+        </div>
     </div>
     <script type="py" src="main.py"></script>
 </body>
