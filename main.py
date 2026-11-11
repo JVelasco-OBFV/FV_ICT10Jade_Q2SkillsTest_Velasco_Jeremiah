@@ -28,7 +28,7 @@ def check_element (e):
     #var2 = dict.get(element,("Element not found","-","-"))
     #document.getElementById("").innerHTML = f""" """"
 
-    verify = listed_elements.get(element, ("-ELEMENT NOT FOUND-","-","-"))
+    verify = listed_elements.get(element, ("-Element not found-","-","-"))
     document.getElementById("output1").innerHTML = f"""
      Symbol: {element} <br>
      Element: {verify[0]} <br>
